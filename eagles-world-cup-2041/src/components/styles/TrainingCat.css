@@ -1,16 +1,21 @@
 .card{
+    position: relative;
     width: 25%;
     height: 60vh;
     border: 1px solid red;
-    background-color: blue;
-    padding: 0;
-    border: 0;
-    
 }
 
-.card h3{
+.card .catTitle{
     text-align: center;
+    padding: 0.5rem;
     background-color: red;
-    border-top: 0;
-    padding-top: 0;
+    font-size: 1.5rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 100%;
+    height: 88%;
+    background-size: auto;
+    background-repeat: no-repeat;
 }

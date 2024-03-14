@@ -1,10 +1,9 @@
 import './styles/TrainingCat.css'
-export default function TrainingCat({name}){
-
+export default function TrainingCat({name, pigment, image}){
     return(
         <section className='card'>
-            <h3>{name}</h3>
-            <img src="" alt="" />
+            <h3 className='catTitle' style={{backgroundColor: pigment}}>{name}</h3>
+            <a href=""><img src={image} alt="" /></a>
         </section>
     )
 }

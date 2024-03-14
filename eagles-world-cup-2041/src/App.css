@@ -1,4 +1,36 @@
-.category{
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.category {
   display: flex;
   justify-content: space-around;
 }
+
+h1 {
+  margin-bottom: 2vh;
+  font-size: 3rem;
+  /* color: white; */
+}
+
+.selection {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 2vh;
+}
+
+.landing p {
+  text-align: center;
+  margin: 0 10%;
+  font-size: 1.2rem;
+  /* color: white; */
+}
+
+/* .landing {
+  background-image: url('../public/dark-stadium.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */
