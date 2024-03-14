@@ -1,0 +1,16 @@
+.card{
+    width: 25%;
+    height: 60vh;
+    border: 1px solid red;
+    background-color: blue;
+    padding: 0;
+    border: 0;
+    
+}
+
+.card h3{
+    text-align: center;
+    background-color: red;
+    border-top: 0;
+    padding-top: 0;
+}
