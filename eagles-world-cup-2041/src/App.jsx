@@ -1,27 +1,40 @@
 import React from "react"
-import TrainingCat from "./components/TrainingCat"
 import './App.css'
-import beginner from "../public/beginner.jpg"
-import intermediate from "../public/intermediate.jpg"
-import advanced from "../public/advanced.jpg"
+// import beginner from "../public/beginner.jpg"
+// import intermediate from "../public/intermediate.jpg"
+// import advanced from "../public/advanced.jpg"
+// import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+// import RootLayout from "./layouts/RootLayout"
+// import Beginner from "./layouts/Beginner"
+// import Intermediate from "./layouts/Intermediate"
+// import Advanced from "./layouts/Advanced"
+
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route path="/" element={<RootLayout />}>
+//       <Route path="/beginner" element={<Beginner />} />
+//       <Route path="/intermediate" element={<Intermediate />} />
+//       <Route path="/advanced" element={<Advanced/>}/>
+//     </Route>
+//   )
+// )
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RootLayout from "./layouts/RootLayout";
+import Beginner from "./layouts/Beginner";
+import Intermediate from "./layouts/Intermediate";
+import Advanced from "./layouts/Advanced";
 
 export default function App() {
   return (
-    <main className="landing">
-      <h1>THE ULTIMATE FOOTBALL TRAINING</h1>
-      <p>
-        The Ultimate Football Training Guide, crafted by <span style={{ color: "white" }}>Elite Sports Performance</span>, is your passport to
-        <span style={{ color: "white" }}> unleashing superhuman strength, explosive power, and lightning speed</span> on the pitch.
-        Whether you're a towering center-back or a nimble winger, these techniques will propel your game
-        to new heights. So lace up those boots, give it your all, and watch your performance soar! ⚽💪🔥
-      </p>
-      <h3 className="selection">Select Your Training Category</h3>
-      <section className="category">
-          <TrainingCat name="Beginner" pigment={"blue"} image={beginner} />        
-          <TrainingCat name="Intermediate" pigment={"yellow"} image={intermediate} />
-          <TrainingCat name="Advanced" pigment={"red"} image={advanced} />
-      </section>
-
-    </main>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<RootLayout />} />
+        <Route path="/beginner" element={<Beginner />} />
+        <Route path="/intermediate" element={<Intermediate />} />
+        <Route path="/advanced" element={<Advanced />} />
+      </Routes>
+    </Router>
+  );
 }
