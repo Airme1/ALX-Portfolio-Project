@@ -5,6 +5,7 @@ import advanced from "../../public/advanced.jpg"
 import { NavLink } from "react-router-dom"
 
 export default function RootLayout() {
+    
     return (
         <main className="landing">
             <h1>THE ULTIMATE FOOTBALL TRAINING</h1>

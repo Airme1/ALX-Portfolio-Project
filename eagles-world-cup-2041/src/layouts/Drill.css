@@ -1,0 +1,15 @@
+.drill-card{
+    display: flex;
+    /* margin-top: 50px; */
+    margin: 5rem auto;
+    /* outline: 1px solid; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.drill-card img{
+    height: 70vh;
+    border: 1px solid red;
+    border-radius: 5%;
+    /* width: 100%; */
+}
