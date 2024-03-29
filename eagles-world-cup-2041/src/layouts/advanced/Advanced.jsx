@@ -1,4 +1,4 @@
-import DrillCard from './DrillCard'
+import DrillCard from '../DrillCard'
 
 export default function Advanced(){
     return(

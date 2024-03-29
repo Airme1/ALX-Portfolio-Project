@@ -6,7 +6,7 @@ import './Drill.css'
 import { NavLink } from "react-router-dom"
 
 
-export default function DrillCard(s_pass, s_shoot, s_control, s_dribble) {
+export default function DrillCard({s_pass, s_shoot, s_control, s_dribble}) {
     // const categories = [passImage, shootImage, controlImage, dribbleImage];
 
     return (
