@@ -38,7 +38,7 @@ const router = createBrowserRouter([{
                 },
                 {
                     path: "/beginner/dribble",
-                    path: <BeginnerDribble />
+                    element: <BeginnerDribble />
                 }
             ]
         },
@@ -60,7 +60,7 @@ const router = createBrowserRouter([{
                 },
                 {
                     path: "/intermediate/dribble",
-                    path: <IntermediateDribble />
+                    element: <IntermediateDribble />
                 }
             ]
         },
@@ -82,7 +82,7 @@ const router = createBrowserRouter([{
                 },
                 {
                     path: "/advanced/dribble",
-                    path: <AdvancedDribble />
+                    element: <AdvancedDribble />
                 }
             ]
         }

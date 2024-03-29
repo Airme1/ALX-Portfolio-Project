@@ -2,10 +2,10 @@ import TrainingCat from "../components/TrainingCat"
 import beginner from "../../public/beginner.jpg"
 import intermediate from "../../public/intermediate.jpg"
 import advanced from "../../public/advanced.jpg"
-import { NavLink } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 export default function RootLayout() {
-    
+
     return (
         <main className="landing">
             <h1>THE ULTIMATE FOOTBALL TRAINING</h1>
@@ -27,6 +27,7 @@ export default function RootLayout() {
                     <TrainingCat name="Advanced" pigment={"red"} color="blue" image={advanced} />
                 </NavLink>
             </section>
+            <Outlet />
         </main>
     )
 }

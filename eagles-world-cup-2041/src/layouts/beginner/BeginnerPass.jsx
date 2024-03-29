@@ -1,7 +1,7 @@
-export default function BeginnerPass(){
-    return(
+export default function BeginnerPass() {
+    return (
         <>
-        <h1>Beginners Passing Drill</h1>
+            <h1>Beginners Passing Drill</h1>
         </>
     )
 }
