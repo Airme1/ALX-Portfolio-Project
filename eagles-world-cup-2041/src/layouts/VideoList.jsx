@@ -1,13 +1,20 @@
 import React from 'react';
+import './subTraining.css'
 
 function VideoList({ videos }) {
   return (
-    <div>
+    <div className='video-container'>
       {videos.map((video) => (
-        <div key={video.id.videoId}>
-          <h2>{video.snippet.title}</h2>
-          <p>{video.snippet.description}</p>
-          <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} />
+        <div key={video.id.videoId} className='video-item'>
+          <iframe
+            width="460"
+            height="315"
+            src={`https://www.youtube.com/embed/${video.id.videoId}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title={video.snippet.title}
+          ></iframe>
         </div>
       ))}
     </div>

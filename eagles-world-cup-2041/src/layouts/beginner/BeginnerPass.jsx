@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import VideoList from '../VideoList';
+import '../subTraining.css'
 
 function BeginnerPass() {
   const [videos, setVideos] = useState(null);
@@ -10,7 +11,7 @@ function BeginnerPass() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://www.googleapis.com/youtube/v3/search?key=AIzaSyBJTVJnlWww2K6Eily-GxJQVQuNeHO_7Tw&q=Beginner soccer passing drill&type=video&part=snippet&maxResults=12"
+          "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDEZ8XeOqNjbWdQhazkdbDLbcFPDBE1ScY&q=Beginner soccer passing drill&type=video&part=snippet&maxResults=12"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -36,8 +37,8 @@ function BeginnerPass() {
   }
   
   return (
-    <div>
-      {/* Render your fetched data here */}
+    <div className="video-container">
+      <h1>Work on Your Passing</h1>
       <VideoList videos={videos} />
     </div>
   );
